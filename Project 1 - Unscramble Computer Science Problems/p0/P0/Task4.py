@@ -1,3 +1,4 @@
+%%time
 """
 Read file into texts and calls.
 It's ok if you don't understand how to read files.
@@ -25,3 +26,20 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
+outgoing_calls = set()
+incoming_calls = set()
+outgoing_texts = set()
+incoming_texts = set()
+
+for call in calls:
+    outgoing_calls.add(call[0])
+    incoming_calls.add(call[1])
+    
+for text in texts:
+    outgoing_texts.add(text[0])
+    incoming_texts.add(text[1])
+    
+print("These numbers could be telemarketers:")
+for num in sorted([*(outgoing_calls - (incoming_calls|outgoing_texts|incoming_texts))]):
+    print(num)
+    

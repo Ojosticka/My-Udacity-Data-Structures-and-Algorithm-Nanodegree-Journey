@@ -1,3 +1,7 @@
+from os import times
+
+
+%%time
 """
 Read file into texts and calls.
 It's ok if you don't understand how to read files.
@@ -11,12 +15,12 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
-List_Numbers = []
+List_Numbers = set()
+
 def count_numbers(numbers):
-    for i in numbers:
-        for num in i[:2]:
-            if num not in List_Numbers:
-                List_Numbers.append(num)
+    for num in numbers:
+        List_Numbers.add(num[0])
+        List_Numbers.add(num[1])
 
 count_numbers(texts)
 count_numbers(calls)

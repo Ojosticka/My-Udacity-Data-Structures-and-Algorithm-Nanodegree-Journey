@@ -1,3 +1,7 @@
+from os import times
+
+
+%%time
 """
 Read file into texts and calls.
 It's ok if you don't understand how to read files.
@@ -11,10 +15,9 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
-print ("First record of texts,", texts[0][0], "texts", texts[0][1], "at time",  texts[0][-1])
-print ("Last record of calls,", calls[-1][0], "calls", calls[-1][1], "at time",  calls[-1][-2], "lasting", calls[-1][-1])
+print ("First record of texts, {} texts, {} at time {}".format(*texts[0]))
+print ("Last record of calls, {} calls {} at time {} lasting {}".format(*calls[-1]))
 
-%time
 
 """
 TASK 0:
