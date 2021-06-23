@@ -11,7 +11,6 @@ Time Complexity: O(n)
 Description: Two lists are looped through once each through the function. O(n+n) -> O(n)
 Space Complexity: O(n)
 
-
 "Task2.py"
 Time Complexity: O(n)
 Description: List is looped through just once
