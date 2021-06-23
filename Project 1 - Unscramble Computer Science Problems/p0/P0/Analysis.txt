@@ -1,0 +1,28 @@
+Unscramble Computer Science Problems
+Project 1
+
+"Task0.py"
+Time Complexity: O(1)
+Description: Input does not affect run time
+Space Complexity: O(1)
+
+"Task1.py"
+Time Complexity: O(n)
+Description: Two lists are looped through once each through the function. O(n+n) -> O(n)
+Space Complexity: O(n)
+
+
+"Task2.py"
+Time Complexity: O(n)
+Description: List is looped through just once
+Space Complexity: O(n) + O(n) = O(2n) -> O(n)
+
+"Task3.py"
+Time Complexity: O(n+nlogn) -> O(nlogn)
+Description: For loop(O(n)) and python sort(O(nlogn))
+Space Complexity: O(2n) -> O(n)
+
+"Task4.py"
+Time Complexity: O(n+n+nlogn) -> O(2n + nlogn) -> O(nlogn)
+Description: Two For loops looped separately and python sort
+Space Complexity: O(4n) -> O(n)
