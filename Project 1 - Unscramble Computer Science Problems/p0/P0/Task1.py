@@ -1,6 +1,3 @@
-from os import times
-
-
 %%time
 """
 Read file into texts and calls.
@@ -15,6 +12,13 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+"""
+TASK 1:
+How many different telephone numbers are there in the records? 
+Print a message:
+"There are <count> different telephone numbers in the records."
+"""
+
 List_Numbers = set()
 
 def count_numbers(numbers):
@@ -26,9 +30,4 @@ count_numbers(texts)
 count_numbers(calls)
 
 print ("There are", len(List_Numbers), "different telephone numbers in the records")
-"""
-TASK 1:
-How many different telephone numbers are there in the records? 
-Print a message:
-"There are <count> different telephone numbers in the records."
-"""
+
