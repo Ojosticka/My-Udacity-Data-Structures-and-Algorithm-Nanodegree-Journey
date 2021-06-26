@@ -1,0 +1,4 @@
+Hamming Distance
+
+In information theory, the Hamming distance between two strings of equal length is the number of positions at which the corresponding
+symbols are different. Calculate the Hamming distace for the following test cases.
