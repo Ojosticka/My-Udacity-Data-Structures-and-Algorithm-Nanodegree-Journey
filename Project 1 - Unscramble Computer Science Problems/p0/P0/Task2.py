@@ -1,4 +1,4 @@
-%%time 
+%%time
 """
 Read file into texts and calls.
 It's ok if you don't understand how to read files
@@ -30,6 +30,7 @@ for call in calls:
 Number = max(numbers, key=numbers.get)
 
 print (f"{Number} spent the longest time, {numbers[Number]} seconds, on the phone during September 2016")
+
 
 
 
